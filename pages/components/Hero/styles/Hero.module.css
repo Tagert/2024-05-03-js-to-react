@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0rem 2rem;
+}
+.container .box {
+  display: flex;
+  height: 100%;
+  padding: 2rem 6rem 3rem 6rem;
+}
+.container .box .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  width: 50%;
+}
+.container .box .description h1 {
+  max-width: 26rem;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.container .box .description a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.625rem 2.75rem;
+  border: 0.15rem solid rgb(107, 126, 60);
+  color: black;
+}
+.container .box .description a:hover {
+  color: #f1faff;
+  background-color: rgb(107, 126, 60);
+}
+.container .box .holder {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+.container .box .holder .imageBox {
+  position: relative;
+  height: 33rem;
+  width: 26rem;
+  margin-bottom: 6rem;
+}
+.container .box .holder .imageBox img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .box .holder .imageBox img:nth-child(1) {
+  position: relative;
+  box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+.container .box .holder .imageBox img:nth-child(2) {
+  position: absolute;
+  top: 10.31rem;
+  right: 8.6rem;
+  z-index: 0;
+}/*# sourceMappingURL=Hero.module.css.map */
