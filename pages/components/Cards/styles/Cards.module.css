@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  width: 18rem;
+  height: 27rem;
+  border: 0.1rem solid black;
+  border-radius: 0.6rem;
+  box-shadow: 0.13rem 0.14rem 0.17rem rgba(0, 0, 0, 0.15);
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+.container:hover {
+  scale: 1.05;
+}
+.container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.6rem;
+}
+.container p {
+  display: flex;
+  gap: 0.2rem;
+  font-size: 1rem;
+}
+.container p:nth-child(4) span {
+  font-weight: 600;
+}/*# sourceMappingURL=Cards.module.css.map */

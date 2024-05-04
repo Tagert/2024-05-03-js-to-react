@@ -1,0 +1,21 @@
+import styles from "./styles/Main.module.css";
+import { CardsWrapper } from "../CardsWrapper/CardsWrapper.jsx";
+
+const Main = ({ cards }) => {
+  return (
+    <main className={styles.container}>
+      <div className={styles.description_box}>
+        <h2>Complete Interior Design Service</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+        </p>
+      </div>
+
+      <CardsWrapper cards={cards} />
+    </main>
+  );
+};
+
+export { Main };

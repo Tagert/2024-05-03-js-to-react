@@ -55,10 +55,11 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0.6rem;
 }
 .container .box .holder .imageBox img:nth-child(1) {
   position: relative;
-  box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.45);
   z-index: 1;
 }
 .container .box .holder .imageBox img:nth-child(2) {
