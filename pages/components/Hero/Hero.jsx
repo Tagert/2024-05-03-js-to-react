@@ -1,5 +1,5 @@
 import styles from "./styles/Hero.module.css";
-import { Header } from "../Header/Header.jsx";
+import { Header } from "../../layouts/Header/Header.jsx";
 import interiors1 from "../../../public/assets/interiors1.jpg";
 import interiors2 from "../../../public/assets/interiors2.jpg";
 import { useState } from "react";

@@ -1,5 +1,5 @@
 import styles from "./styles/Main.module.css";
-import { CardsWrapper } from "../CardsWrapper/CardsWrapper.jsx";
+import { CardsWrapper } from "../../components/CardsWrapper/CardsWrapper.jsx";
 
 const Main = ({ cards }) => {
   return (

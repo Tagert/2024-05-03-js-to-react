@@ -1,3 +1,5 @@
+@use "../../../../styles/components/responsive";
+
 .container {
   display: flex;
   flex-direction: column;
@@ -11,6 +13,12 @@
     display: flex;
     height: 100%;
     padding: 2rem 6rem 3rem 6rem;
+
+    @include responsive.xl-additional {
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+    }
 
     .description {
       display: flex;

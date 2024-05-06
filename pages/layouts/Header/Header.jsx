@@ -1,6 +1,6 @@
 import styles from "./styles/Header.module.css";
-import { Navbar } from "./Navbar/Navbar.jsx";
 import { useState } from "react";
+import { Navbar } from "../../components/Navbar/Navbar.jsx";
 
 const Header = () => {
   const [logo, setLogo] = useState("STUDIO");

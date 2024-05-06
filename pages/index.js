@@ -1,13 +1,18 @@
-import styles from "../styles/Home/Home.module.css";
+import styles from "../styles/App/App.module.css";
 import axios from "axios";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { Hero } from "./components/Hero/Hero.jsx";
-import { Main } from "./components/Main/Main.jsx";
+import { Main } from "./layouts/Main/Main.jsx";
+import { Footer } from "./layouts/Footer/Footer.jsx";
 
 // https://nicepage.com/html-templates/preview/we-design-luxury-interiors-6226046?device=desktop
 
-const Home = () => {
+const App = () => {
+  const [copyright, setCopyright] = useState(
+    "©2024 STUDIO. ALL RIGHTS RESERVED"
+  );
+
   const [cards, setCards] = useState(null);
 
   const fetchCards = async () => {
@@ -38,8 +43,10 @@ const Home = () => {
       <Hero />
 
       <Main cards={cards} />
+
+      <Footer text={copyright} />
     </>
   );
 };
 
-export default Home;
+export default App;
