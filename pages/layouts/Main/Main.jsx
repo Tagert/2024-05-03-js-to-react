@@ -1,7 +1,7 @@
 import styles from "./styles/Main.module.css";
 import { CardsWrapper } from "../../components/CardsWrapper/CardsWrapper.jsx";
 
-const Main = ({ cards }) => {
+const Main = ({ cards, setCards }) => {
   return (
     <main className={styles.container}>
       <div className={styles.description_box}>
@@ -13,7 +13,7 @@ const Main = ({ cards }) => {
         </p>
       </div>
 
-      <CardsWrapper cards={cards} />
+      <CardsWrapper cards={cards} setCards={setCards} />
     </main>
   );
 };

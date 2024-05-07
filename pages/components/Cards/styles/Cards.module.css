@@ -20,6 +20,8 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.6rem;
+  width: 15.875rem;
+  height: 15.875rem;
 }
 .container p {
   display: flex;

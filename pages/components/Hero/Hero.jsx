@@ -1,8 +1,8 @@
 import styles from "./styles/Hero.module.css";
-import { Header } from "../../layouts/Header/Header.jsx";
+import Image from "next/image";
 import interiors1 from "../../../public/assets/interiors1.jpg";
 import interiors2 from "../../../public/assets/interiors2.jpg";
-import { useState } from "react";
+import { Header } from "../../layouts/Header/Header.jsx";
 
 const Hero = () => {
   return (
@@ -18,8 +18,8 @@ const Hero = () => {
 
         <div className={styles.holder}>
           <div className={styles.imageBox}>
-            <img src={interiors1.src} alt="" />
-            <img src={interiors2.src} alt="" />
+            <Image alt="interiors image" src={interiors1} priority />
+            <Image alt="interiors image" src={interiors2} priority />
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ const App = () => {
   const fetchCards = async () => {
     try {
       const response = await axios.get(
-        "https://65bb606a52189914b5bbe878.mockapi.io/items"
+        "https://65bb606a52189914b5bbe878.mockapi.io/products"
       );
 
       setCards(response.data);
@@ -42,7 +42,7 @@ const App = () => {
 
       <Hero />
 
-      <Main cards={cards} />
+      <Main cards={cards} setCards={setCards} />
 
       <Footer text={copyright} />
     </>
