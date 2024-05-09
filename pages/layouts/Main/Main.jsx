@@ -1,19 +1,26 @@
 import styles from "./styles/Main.module.css";
 import { CardsWrapper } from "../../components/CardsWrapper/CardsWrapper.jsx";
 
-const Main = ({ cards, setCards }) => {
+const Main = ({ cards, setCards, btnText, paragraph, heading }) => {
   return (
     <main className={styles.container}>
       <div className={styles.description_box}>
-        <h2>Complete Interior Design Service</h2>
+        {cards && (
+          <h2>
+            {Array.isArray(cards)
+              ? "Complete Interior Design Service"
+              : heading}
+          </h2>
+        )}
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam.
+          {cards &&
+            (Array.isArray(cards)
+              ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+              : paragraph)}
         </p>
       </div>
 
-      <CardsWrapper cards={cards} setCards={setCards} />
+      <CardsWrapper cards={cards} setCards={setCards} btnText={btnText} />
     </main>
   );
 };

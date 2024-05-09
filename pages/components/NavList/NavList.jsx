@@ -1,12 +1,13 @@
+import Link from "next/link";
 import styles from "./styles/NavList.module.css";
 
 const NavList = ({ onBurgerBtnClick, nav }) => {
   return (
     <nav className={styles.container}>
       {nav.map((n) => (
-        <a key={n.id} href={n.href}>
+        <Link key={n.id} href={n.href}>
           {n.title}
-        </a>
+        </Link>
       ))}
 
       <button onClick={onBurgerBtnClick}>

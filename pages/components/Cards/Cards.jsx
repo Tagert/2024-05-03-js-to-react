@@ -1,7 +1,18 @@
+import Link from "next/link";
 import { useState } from "react";
 import styles from "./styles/Cards.module.css";
 
-const Cards = ({ id, imgUrl, title, description, price, stock, setCards }) => {
+const Cards = ({
+  id,
+  imgUrl,
+  title,
+  description,
+  price,
+  stock,
+  cards,
+  setCards,
+  btnText,
+}) => {
   const [inStock, setStock] = useState("out of stock");
 
   const showCardId = () => {
@@ -9,15 +20,20 @@ const Cards = ({ id, imgUrl, title, description, price, stock, setCards }) => {
   };
 
   const removeCardFromArray = () => {
-    setCards((prevState) => prevState.filter((card) => card.id != id));
+    {
+      Array.isArray(cards)
+        ? setCards((prevState) => prevState.filter((card) => card.id != id))
+        : setTimeout(() => {
+            window.location.href = "/";
+          }, 500);
+    }
   };
-
+  setTimeout;
   return (
     <div
       className={styles.container}
       onClick={() => {
         showCardId();
-        removeCardFromArray();
       }}
     >
       {imgUrl ? (
@@ -31,6 +47,19 @@ const Cards = ({ id, imgUrl, title, description, price, stock, setCards }) => {
         <span>{price}</span>€
       </p>
       <p>{stock <= 0 ? inStock : `${stock} units left`}</p>
+      <div className={styles.button_box}>
+        <Link href={`/card/${id}`} className={styles.text_link}>
+          <button>More Details</button>
+        </Link>
+
+        <button
+          onClick={() => {
+            removeCardFromArray();
+          }}
+        >
+          {Array.isArray(cards) ? "Remove Card" : `${btnText}`}
+        </button>
+      </div>
     </div>
   );
 };

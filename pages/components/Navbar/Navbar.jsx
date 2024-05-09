@@ -7,12 +7,12 @@ const Navbar = ({ logo }) => {
   const [nav, setNav] = useState([
     {
       id: 1,
-      title: "About",
-      href: "#",
+      title: "Home",
+      href: "/",
     },
     {
       id: 2,
-      title: "News",
+      title: "About",
       href: "#",
     },
     {
@@ -34,13 +34,13 @@ const Navbar = ({ logo }) => {
   };
 
   return (
-    <navbar className={styles.container}>
+    <div className={styles.container}>
       <h1>{logo}</h1>
 
       <NavList onBurgerBtnClick={onBurgerBtnClick} nav={nav} />
 
       {isDisplayMobileMenu && <MobileMenu nav={nav} />}
-    </navbar>
+    </div>
   );
 };
 
