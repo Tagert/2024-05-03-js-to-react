@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  width: 30rem;
+}
+.container .counter_holder {
+  display: flex;
+}
+.container .counter_holder .counter_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.container .counter_holder .counter_box input {
+  padding: 0.4rem 0.8rem;
+  border: 0.1rem solid black;
+  border-radius: 0.6rem;
+}
+.container .counter_holder .counter_box input::-moz-placeholder {
+  padding-left: 0rem;
+}
+.container .counter_holder .counter_box input::placeholder {
+  padding-left: 0rem;
+}
+.container .counter_holder .counter_box button {
+  width: 6rem;
+  padding: 0.3rem;
+  border: 0.1rem solid black;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.container .counter_holder .counter_box button:hover:hover {
+  color: #f1faff;
+  background-color: rgb(107, 126, 60);
+}
+.container .no_counter {
+  display: none;
+}
+.container .validation_holder {
+  display: flex;
+}
+.container .validation_holder .validation_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.container .validation_holder .validation_box input {
+  padding: 0.4rem 0.8rem;
+  border: 0.1rem solid black;
+  border-radius: 0.6rem;
+}
+.container .validation_holder .validation_box input::-moz-placeholder {
+  padding-left: 0rem;
+}
+.container .validation_holder .validation_box input::placeholder {
+  padding-left: 0rem;
+}
+.container .validation_holder .validation_box button {
+  width: 6rem;
+  padding: 0.3rem;
+  border: 0.1rem solid black;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.container .validation_holder .validation_box button:hover:hover {
+  color: #f1faff;
+  background-color: rgb(107, 126, 60);
+}
+.container .no_validation {
+  display: none;
+}/*# sourceMappingURL=Counter.module.css.map */

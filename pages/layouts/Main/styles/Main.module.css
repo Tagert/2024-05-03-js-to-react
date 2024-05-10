@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 2rem;
   min-height: 100vh;
@@ -9,7 +8,13 @@
   margin-right: auto;
   padding: 2rem 6rem 2rem 6rem;
 }
-.container .description_box {
+.container .description_holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.container .description_holder .description_box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,10 +22,10 @@
   max-width: 50rem;
   margin-top: 4rem;
 }
-.container .description_box h2 {
+.container .description_holder .description_box h2 {
   font-size: 2.85rem;
 }
-.container .description_box p {
+.container .description_holder .description_box p {
   text-align: center;
   line-height: 1.8;
   font-size: 1.15rem;

@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  width: 30rem;
+
+  .counter_holder {
+    display: flex;
+
+    .counter_box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      input {
+        padding: 0.4rem 0.8rem;
+        border: 0.1rem solid black;
+        border-radius: 0.6rem;
+
+        &::placeholder {
+          padding-left: 0rem;
+        }
+      }
+
+      button {
+        width: 6rem;
+        padding: 0.3rem;
+        border: 0.1rem solid black;
+        border-radius: 0.3rem;
+        cursor: pointer;
+
+        &:hover {
+          &:hover {
+            color: #f1faff;
+            background-color: rgb(107, 126, 60);
+          }
+        }
+      }
+    }
+  }
+
+  .no_counter {
+    display: none;
+  }
+
+  .validation_holder {
+    display: flex;
+
+    .validation_box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      input {
+        padding: 0.4rem 0.8rem;
+        border: 0.1rem solid black;
+        border-radius: 0.6rem;
+
+        &::placeholder {
+          padding-left: 0rem;
+        }
+      }
+
+      button {
+        width: 6rem;
+        padding: 0.3rem;
+        border: 0.1rem solid black;
+        border-radius: 0.3rem;
+        cursor: pointer;
+
+        &:hover {
+          &:hover {
+            color: #f1faff;
+            background-color: rgb(107, 126, 60);
+          }
+        }
+      }
+    }
+  }
+
+  .no_validation {
+    display: none;
+  }
+}
